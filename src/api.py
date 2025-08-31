@@ -10,8 +10,8 @@ CORS(app)
 
 # PEMUATAN MODEL & SCALER
 try:
-    model = joblib.load('../models/stress_model_v1.pkl')
-    scaler = joblib.load('../models/scaler_v1.pkl')
+    model = joblib.load('models/stress_model_v1.pkl')
+    scaler = joblib.load('models/scaler_v1.pkl')
     print("Model dan scaler berhasil dimuat.")
 except Exception as e:
     print(f"Error saat memuat model atau scaler: {e}")
